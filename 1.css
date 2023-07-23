@@ -1,0 +1,84 @@
+/*  */
+
+
+a{text-decoration: none;
+
+}
+/* center */
+    .center {
+        display: flex;
+        justify-content: center;
+      }
+
+      .center iframe {
+        max-width: 50%;
+        height: 500px;
+        margin: 0 auto; /* 设置左右边距为auto，将图像和iframe水平居中 */
+      }
+
+/* button */
+    button {
+      position: relative;
+      background: #000;
+      border: 0;
+      padding: 14px 42px;
+      border-radius: 3px;
+      cursor: pointer;
+      overflow: hidden;
+      outline: none;
+      font-weight: 400;
+      font-size: 12px;
+      color: #fff;
+      letter-spacing: .2em;
+      box-shadow: 0 8px 32px rgba(#000,.2);
+      transition: all .2s ease;
+    }
+
+    button:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -200%;
+      width: 200%;
+      height: 100%;
+      transform: skewX(-20deg);
+      background-image: linear-gradient(to right,transparent,rgba(#fff,.3),transparent);    
+    }
+
+    button:hover:after {
+      animation: shine 1.}
+
+
+  /* 테이블 스타일 */
+table {
+  border-collapse: collapse;
+  width: 400px;
+  margin: 20px;
+}
+
+
+/* 테이블 헤더 스타일 */
+th {
+  background-color: #27ae60;
+  padding: 12px;
+  text-align: center;
+  color: #fff; /* 검은색으로 변경 */
+}
+
+/* 테이블 데이터 셀 스타일 */
+td {
+  border: 1px solid #dcdcdc;
+  padding: 10px;
+  text-align: center;
+  color: #000000; /* 검은색으로 변경 */
+  background-color: #dcdcdc;
+}
+
+/* 홀수 행의 배경색 스타일 */
+tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+
+caption {
+  font-size: 50px;}
